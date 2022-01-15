@@ -1,1 +1,5 @@
-{}
+{
+  "scripts": {
+    "start": "sass --watch styles.scss styles.css"
+  }
+}
