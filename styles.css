@@ -1,0 +1,42 @@
+body {
+  background-color: #22212F;
+}
+
+.container {
+  background-color: #FAF7FF;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: #22212F;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+.nav__logo {
+  font-weight: bold;
+  font-size: 2em;
+  padding-left: 15px;
+}
+.nav__list {
+  display: flex;
+  list-style: none outside none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+.nav__item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*# sourceMappingURL=styles.css.map */

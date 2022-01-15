@@ -1,0 +1,58 @@
+$myFont: Helvetica,
+sans-serif;
+$myColor1:#0C0C0C;
+$myColor2:#8083FF;
+$myColor3:#22212F;
+$myColor4:#00E5B0;
+$myColor5:#FAF7FF;
+// https: //mycolor.space/?hex=%230C0C0C&sub=1
+$myFontSize: 18px;
+$bodyWidth: 1200px;
+
+body {
+  background-color: $myColor3;
+}
+
+.container {
+  background-color: $myColor5;
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor3;
+  max-width: $bodyWidth;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+
+  &__logo {
+    font-weight: bold;
+    font-size: 2em;
+    padding-left: 15px;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none outside none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+    // gap: 25%;
+
+  }
+
+  &__item {
+    padding-left: 15px;
+    padding-right: 15px;
+    // align-self: flex-end;
+
+  }
+}
