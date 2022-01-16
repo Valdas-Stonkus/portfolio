@@ -26,7 +26,7 @@
             <li class="nav__item">Contact</li>
           </ul>
         </div>
-        <div class="social-icons">
+        <div class="nav__social-icons">
           <ul class="nav__list">
             <li class="nav__item"><a href="https://github.com/MrStonkus" target="_blank"><i class="bi-github"></i></a>
             </li>
@@ -37,8 +37,15 @@
                 href="mailto:?subject=Portfolio%20of%20developer%20Valdas%20Stonkus&body=Hi,%0D%0Athis%20is%20link%20to%20portfolio%20of%20developer%20Valdas%20Stonkus:%0D%0Ahttps://stonkus.lt"><i
                   class="bi-share"></i></a>
             </li>
+
           </ul>
         </div>
+        <div class="nav__side-menu">
+          <i class="bi-list" style="font-size:30px;cursor:pointer" onclick="openNav()"></i>
+        </div>
+
+
+
       </nav>
     </header>
 
@@ -47,6 +54,15 @@
 
     </main>
     <footer>Made by Valdas Stonkus</footer>
+  </div>
+  <!-- side navigation -->
+  <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+  <div id="sidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="bi-x-lg"></i></a>
+    <a href="#">Home</a>
+    <a href="#">Work</a>
+    <a href="#">Resume</a>
+    <a href="#">Contact</a>
   </div>
   <script src="main.js"></script>
 </body>

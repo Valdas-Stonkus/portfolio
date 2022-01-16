@@ -2,15 +2,27 @@ $myFont: Helvetica,
 sans-serif;
 $myColor1:#0C0C0C;
 $myColor2:#8083FF;
-$myColor3:#22212F;
+$myColor3:#22212F; // text color
 $myColor4:#00E5B0;
 $myColor5:#FAF7FF;
 // https: //mycolor.space/?hex=%230C0C0C&sub=1
 $myFontSize: 18px;
 $bodyWidth: 1200px;
 
+// TODO remove comments
+// $media-desktop: "only screen and (max-width : 1024px)";
+// $media-tablet: "only screen and (max-width : 768px)";
+$media-mobile-max: "only screen and (max-width : 600px)";
+$media-mobile-min: "only screen and (min-width : 600px)";
+// $media-mobile-sm: "only screen and (max-width : 480px)";
+// @media #{$media-desktop} {
+//   background: red;
+// }
+
+
 body {
   background-color: $myColor3;
+  // opacity: 0.3;
 }
 
 .container {
@@ -36,10 +48,23 @@ body {
     font-weight: bold;
     font-size: 2em;
     padding-left: 15px;
+
+  }
+
+  &__social-icons ul li a {
+    color: $myColor3;
+
+  }
+
+  &__links {
+    @media #{$media-mobile-max} {
+      display: none;
+    }
   }
 
   &__list {
     display: flex;
+    align-items: center;
     list-style: none outside none;
     margin-top: 0;
     margin-bottom: 0;
@@ -52,8 +77,61 @@ body {
   &__item {
     padding-left: 15px;
     padding-right: 15px;
-    // align-self: flex-end;
 
+  }
+
+  &__side-menu {
+    font-size: 32px;
+    color: $myColor3;
+
+    @media #{$media-mobile-min} {
+      display: none;
+    }
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: $myColor5;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-left: 1px solid;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: $myColor3;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 24px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
   }
 }
 
