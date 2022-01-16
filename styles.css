@@ -47,6 +47,10 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+.nav__item a {
+  text-decoration: none;
+  color: inherit;
+}
 .nav__side-menu {
   font-size: 32px;
   color: #22212F;

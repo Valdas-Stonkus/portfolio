@@ -21,9 +21,9 @@
         <div class="nav__logo">VS</div>
         <div class="nav__links">
           <ul class="nav__list">
-            <li class="nav__item">Work</li>
-            <li class="nav__item">Resume</li>
-            <li class="nav__item">Contact</li>
+            <li class="nav__item"><a href="#work" onclick="closeNav()">Work</a></li>
+            <li class="nav__item"><a href="#resume" onclick="closeNav()">Resume</a></li>
+            <li class="nav__item"><a href="#contact" onclick="closeNav()">Contact</a></li>
           </ul>
         </div>
         <div class="nav__social-icons">
@@ -43,9 +43,6 @@
         <div class="nav__side-menu">
           <i class="bi-list" style="font-size:30px;cursor:pointer" onclick="openNav()"></i>
         </div>
-
-
-
       </nav>
     </header>
 
@@ -53,17 +50,22 @@
       <h1>Hello</h1>
 
     </main>
+    <section id="Home">Home</section>
+    <section id="work">Work</section>
+    <section id="resume">Resume</section>
+    <section id="contact">Contact</section>
     <footer>Made by Valdas Stonkus</footer>
   </div>
+
   <!-- side navigation -->
   <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp -->
   <div id="sidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="bi-x-lg"></i></a>
-    <a href="#">Home</a>
-    <a href="#">Work</a>
-    <a href="#">Resume</a>
-    <a href="#">Contact</a>
+    <a href="#work" onclick="closeNav()">Work</a>
+    <a href="#resume" onclick="closeNav()">Resume</a>
+    <a href="#contact" onclick="closeNav()">Contact</a>
   </div>
+
   <script src="main.js"></script>
 </body>
 
