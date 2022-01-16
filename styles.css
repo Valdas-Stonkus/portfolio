@@ -105,6 +105,47 @@ body {
     font-size: 18px;
   }
 }
+.welcome {
+  display: flex;
+  padding: 7em;
+}
+@media only screen and (max-width : 1024px) {
+  .welcome {
+    padding: 2em;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .welcome {
+    padding: 0.5em;
+  }
+}
+@media only screen and (max-width : 600px) {
+  .welcome {
+    flex-direction: column;
+    padding: 2em;
+  }
+}
+@media only screen and (max-width : 480px) {
+  .welcome {
+    padding: 1em 0em 1em 0em;
+  }
+}
+.welcome__picture {
+  display: flex;
+  flex: 1;
+  padding: 0.5em;
+}
+.welcome__block {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  padding: 0.5em;
+}
+.welcome__myimg {
+  max-width: 100%;
+  object-fit: cover;
+}
+
 footer {
   text-align: right;
 }

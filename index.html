@@ -47,25 +47,39 @@
     </header>
 
     <main>
-      <h1>Hello</h1>
 
-    </main>
-    <section id="Home">Home</section>
-    <section id="work">Work</section>
-    <section id="resume">Resume</section>
-    <section id="contact">Contact</section>
-    <footer>Made by Valdas Stonkus</footer>
+      <section class="welcome" id="welcome">
+        <div class="welcome__picture">
+          <img class="welcome__myimg" src=" ./src/valdas_wb.jpg" alt="Valdas's picture in greyscale">
+        </div>
+
+        <div class="welcome__block">
+          <h1>Hi, I'm Valdas and I'm a Junior Full Stack Web Developer</h1>
+          <p>I'm Junior Javascript and Python Developer based in Šiauliai, Lithuania. I have 1 year studies experience
+            and
+            I creating webs app.</p>
+          <p>I am currently changing profession, now I am intensively studying Front End programming at the Baltic
+            Institute of Technology.</p>
+          </p>
+        </div>
+      </section>
+      <section id="work">Work section</section>
+      <section id="resume">Resume section</section>
+      <section id="contact">Contact section</section>
+      <footer>Made by Valdas Stonkus</footer>
   </div>
 
   <!-- side navigation -->
   <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp -->
   <div id="sidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="bi-x-lg"></i></a>
+    <a href="#welcome" onclick="closeNav()">Home</a>
     <a href="#work" onclick="closeNav()">Work</a>
     <a href="#resume" onclick="closeNav()">Resume</a>
     <a href="#contact" onclick="closeNav()">Contact</a>
   </div>
 
+  </main>
   <script src="main.js"></script>
 </body>
 

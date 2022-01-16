@@ -10,11 +10,11 @@ $myFontSize: 18px;
 $bodyWidth: 1200px;
 
 // TODO remove comments
-// $media-desktop: "only screen and (max-width : 1024px)";
-// $media-tablet: "only screen and (max-width : 768px)";
+$media-desktop: "only screen and (max-width : 1024px)";
+$media-tablet: "only screen and (max-width : 768px)";
 $media-mobile-max: "only screen and (max-width : 600px)";
 $media-mobile-min: "only screen and (min-width : 600px)";
-// $media-mobile-sm: "only screen and (max-width : 480px)";
+$media-mobile-sm: "only screen and (max-width : 480px)";
 // @media #{$media-desktop} {
 //   background: red;
 // }
@@ -136,6 +136,49 @@ body {
 
   .sidenav a {
     font-size: 18px;
+  }
+}
+
+.welcome {
+  display: flex;
+  padding: 7em;
+
+  @media #{$media-desktop} {
+    padding: 2em;
+  }
+
+  @media #{$media-tablet} {
+    padding: 0.5em;
+  }
+
+  @media #{$media-mobile-max} {
+    flex-direction: column;
+    padding: 2em;
+  }
+
+  @media #{$media-mobile-sm} {
+    padding: 1em 0em 1em 0em;
+  }
+
+  &__picture {
+    display: flex;
+    flex: 1;
+    padding: 0.5em;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    padding: 0.5em;
+  }
+
+  &__myimg {
+    max-width: 100%;
+    object-fit: cover;
+    // height: auto;
+    // height: 10px;
+    // width: 10px;
   }
 }
 
