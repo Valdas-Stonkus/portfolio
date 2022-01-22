@@ -4,7 +4,7 @@ body {
 
 .container {
   background-color: #FAF7FF;
-  font-family: Helvetica, sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-size: 18px;
   color: #22212F;
   max-width: 1200px;
@@ -50,6 +50,9 @@ body {
 .nav__item a {
   text-decoration: none;
   color: inherit;
+}
+.nav__item a:hover {
+  text-shadow: 2px 2px 6px #22212F;
 }
 .nav__side-menu {
   font-size: 32px;
@@ -107,6 +110,7 @@ body {
 }
 .welcome {
   display: flex;
+  align-items: center;
   padding: 7em;
 }
 @media only screen and (max-width : 1024px) {
@@ -141,9 +145,43 @@ body {
   flex: 2;
   padding: 0.5em;
 }
+.welcome__title {
+  font-weight: 700;
+}
 .welcome__myimg {
   max-width: 100%;
   object-fit: cover;
+  border-radius: 2px;
+}
+.welcome__buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.highlight {
+  background-color: #000000;
+  color: #FAF7FF;
+}
+
+.btn {
+  padding: 10px 50px;
+  margin: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #FAF7FF;
+}
+
+.btn:hover {
+  text-shadow: 2px 2px 6px #22212F;
+}
+
+.btn-black {
+  background-color: #000000;
+  color: #FAF7FF;
+}
+
+.btn-black:hover {
+  text-shadow: 2px 2px 6px #FAF7FF;
 }
 
 footer {

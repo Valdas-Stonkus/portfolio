@@ -1,6 +1,8 @@
-$myFont: Helvetica,
+// $myFont: 'Roboto',
+// sans-serif;
+$myFont: 'Chakra Petch',
 sans-serif;
-$myColor1:#0C0C0C;
+$myColor1:#000000; //black
 $myColor2:#8083FF;
 $myColor3:#22212F; // text color
 $myColor4:#00E5B0;
@@ -84,6 +86,10 @@ body {
     color: inherit;
   }
 
+  &__item a:hover {
+    text-shadow: 2px 2px 6px $myColor3;
+  }
+
   &__side-menu {
     font-size: 32px;
     color: $myColor3;
@@ -141,6 +147,7 @@ body {
 
 .welcome {
   display: flex;
+  align-items: center;
   padding: 7em;
 
   @media #{$media-desktop} {
@@ -173,13 +180,53 @@ body {
     padding: 0.5em;
   }
 
+  &__title {
+    font-weight: 700;
+  }
+
   &__myimg {
     max-width: 100%;
     object-fit: cover;
+    // box-shadow: 10px 1px 100px 0 rgba(0, 0, 0, 0.2),
+    // 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2px;
     // height: auto;
     // height: 10px;
     // width: 10px;
   }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.highlight {
+  background-color: $myColor1;
+  color: $myColor5;
+}
+
+
+
+.btn {
+  padding: 10px 50px;
+  margin: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: $myColor5;
+}
+
+.btn:hover {
+  text-shadow: 2px 2px 6px $myColor3;
+}
+
+.btn-black {
+  background-color: $myColor1;
+  color: $myColor5;
+}
+
+.btn-black:hover {
+  text-shadow: 2px 2px 6px $myColor5;
 }
 
 footer {
