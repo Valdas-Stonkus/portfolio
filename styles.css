@@ -112,27 +112,7 @@ body {
   display: flex;
   align-items: center;
   padding: 7em;
-}
-@media only screen and (max-width : 1024px) {
-  .welcome {
-    padding: 2em;
-  }
-}
-@media only screen and (max-width : 768px) {
-  .welcome {
-    padding: 0.5em;
-  }
-}
-@media only screen and (max-width : 600px) {
-  .welcome {
-    flex-direction: column;
-    padding: 2em;
-  }
-}
-@media only screen and (max-width : 480px) {
-  .welcome {
-    padding: 1em 0em 1em 0em;
-  }
+  position: relative;
 }
 .welcome__picture {
   display: flex;
@@ -149,18 +129,63 @@ body {
   font-weight: 700;
 }
 .welcome__myimg {
-  max-width: 100%;
-  object-fit: cover;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 2px;
+}
+.welcome__img-holder {
+  background: red;
+  width: 80px;
+  height: 40px;
+  transform: skewX(-25deg);
+  border-radius: 15%;
+  opacity: 0.5;
 }
 .welcome__buttons {
   display: flex;
   flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width : 1024px) {
+  .welcome {
+    padding: 2em;
+  }
+  .welcome .btn {
+    padding: 10px 40px;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .welcome {
+    padding: 0.5em;
+  }
+  .welcome .btn {
+    padding: 10px 30px;
+  }
+}
+@media only screen and (max-width : 600px) {
+  .welcome {
+    flex-direction: column;
+    padding: 2em;
+  }
+  .welcome .btn {
+    padding: 10px;
+  }
+  .welcome__myimg {
+    max-width: 50%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width : 480px) {
+  .welcome {
+    padding: 1em 0em 1em 0em;
+  }
 }
 
 .highlight {
-  background-color: #000000;
   color: #FAF7FF;
+  background-color: #000000;
 }
 
 .btn {
