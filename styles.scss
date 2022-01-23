@@ -145,7 +145,7 @@ body {
 .welcome {
   display: flex;
   align-items: center;
-  padding: 7em;
+  padding: 1em 7em 1em;
   position: relative;
 
 
@@ -209,16 +209,15 @@ body {
 
   // media
   @media #{$media-desktop} {
-    padding: 2em;
+    padding: 1em 2em 1em;
 
     .btn {
       padding: 10px 40px;
     }
-
   }
 
   @media #{$media-tablet} {
-    padding: 0.5em;
+    padding: 0em 2em 0em;
 
     .btn {
       padding: 10px 30px;
@@ -227,23 +226,49 @@ body {
 
   @media #{$media-mobile-max} {
     flex-direction: column;
-    padding: 2em;
+    padding: 1em 1em 0em;
+
+    &__top-holder {
+      left: 60px;
+    }
+
+    &__bottom-holder {
+      right: 60px;
+    }
 
     .btn {
       padding: 10px;
     }
 
-    &__myimg {
-      max-width: 50%;
-      text-align: center;
+    &__image {
+      padding: 0em 1em 0em;
+      max-width: 60%;
+      // text-align: center;
     }
   }
 
   @media #{$media-mobile-sm} {
-    padding: 1em 0em 1em 0em;
+    padding: 1em 0em 0em;
+
+    &__top-holder {
+      left: 20px;
+    }
+
+    &__bottom-holder {
+      right: 20px;
+    }
   }
 }
 
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-bottom: 0;
+  }
+}
 
 .highlight {
   color: $myColor5;

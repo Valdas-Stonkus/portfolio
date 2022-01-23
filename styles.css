@@ -111,7 +111,7 @@ body {
 .welcome {
   display: flex;
   align-items: center;
-  padding: 7em;
+  padding: 1em 7em 1em;
   position: relative;
 }
 .welcome__pic-wrapper {
@@ -165,7 +165,7 @@ body {
 }
 @media only screen and (max-width : 1024px) {
   .welcome {
-    padding: 2em;
+    padding: 1em 2em 1em;
   }
   .welcome .btn {
     padding: 10px 40px;
@@ -173,7 +173,7 @@ body {
 }
 @media only screen and (max-width : 768px) {
   .welcome {
-    padding: 0.5em;
+    padding: 0em 2em 0em;
   }
   .welcome .btn {
     padding: 10px 30px;
@@ -182,20 +182,41 @@ body {
 @media only screen and (max-width : 600px) {
   .welcome {
     flex-direction: column;
-    padding: 2em;
+    padding: 1em 1em 0em;
+  }
+  .welcome__top-holder {
+    left: 60px;
+  }
+  .welcome__bottom-holder {
+    right: 60px;
   }
   .welcome .btn {
     padding: 10px;
   }
-  .welcome__myimg {
-    max-width: 50%;
-    text-align: center;
+  .welcome__image {
+    padding: 0em 1em 0em;
+    max-width: 60%;
   }
 }
 @media only screen and (max-width : 480px) {
   .welcome {
-    padding: 1em 0em 1em 0em;
+    padding: 1em 0em 0em;
   }
+  .welcome__top-holder {
+    left: 20px;
+  }
+  .welcome__bottom-holder {
+    right: 20px;
+  }
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.work__title {
+  margin-bottom: 0;
 }
 
 .highlight {
