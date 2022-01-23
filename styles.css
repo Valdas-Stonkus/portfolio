@@ -114,12 +114,41 @@ body {
   padding: 7em;
   position: relative;
 }
-.welcome__picture {
+.welcome__pic-wrapper {
   display: flex;
   flex: 1;
+  position: relative;
   padding: 0.5em;
+  animation: idejimas 1s;
 }
-.welcome__block {
+.welcome__image {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+}
+.welcome__img-holder {
+  position: absolute;
+  background: grey;
+  width: 80px;
+  height: 40px;
+  transform: skewX(-25deg);
+  border-radius: 15%;
+  opacity: 0.3;
+}
+.welcome__holder-dot {
+  font-weight: 700;
+  line-height: 6px;
+}
+.welcome__top-holder {
+  left: 0px;
+  top: 0px;
+}
+.welcome__bottom-holder {
+  bottom: 0px;
+  right: 0px;
+}
+.welcome__text-wrapper {
   display: flex;
   flex-direction: column;
   flex: 2;
@@ -127,20 +156,6 @@ body {
 }
 .welcome__title {
   font-weight: 700;
-}
-.welcome__myimg {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 2px;
-}
-.welcome__img-holder {
-  background: red;
-  width: 80px;
-  height: 40px;
-  transform: skewX(-25deg);
-  border-radius: 15%;
-  opacity: 0.5;
 }
 .welcome__buttons {
   display: flex;
@@ -211,6 +226,15 @@ body {
 
 footer {
   text-align: right;
+}
+
+@keyframes idejimas {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

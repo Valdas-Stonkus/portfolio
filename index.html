@@ -16,15 +16,6 @@
     href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
 
-
-
-
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet"> -->
-
   <link rel="stylesheet" href="styles.css">
   <title>Portfolio of developer - Valdas Stonkus</title>
 </head>
@@ -63,14 +54,23 @@
     </header>
 
     <main>
-
       <section class="welcome" id="welcome">
-        <div class="welcome__picture">
-          <img class="welcome__myimg" src=" ./src/valdas_wb.jpg" alt="Valdas's picture in greyscale">
-        </div>
-        <div class="welcome__img-holder"></div>
 
-        <div class="welcome__block">
+        <div class="welcome__pic-wrapper">
+          <img class="welcome__image" src=" ./src/valdas_wb.jpg" alt="Valdas's picture in greyscale">
+          <div class="welcome__img-holder welcome__top-holder">
+            <div class="welcome__holder-dot"> . . . . . . . . . . . . . . . . .
+              . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+            </div>
+          </div>
+          <div class="welcome__img-holder welcome__bottom-holder">
+            <div class="welcome__holder-dot"> . . . . . . . . . . . . . . . . .
+              . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+            </div>
+          </div>
+        </div>
+
+        <div class="welcome__text-wrapper">
           <h1 class="welcome__title">
             <span>Hi, I'm Valdas and I'm<br></span>
             a
@@ -80,7 +80,7 @@
           <p>I'm Full stack Developer based in Šiauliai, Lithuania. I have more that 1 year studies
             experience of
             creating web and backend applications. I am open for new oportunities and interesting projects.</p>
-          <p>I’m learning very fast, check out my work.</p>
+          <p>I'm learning very fast, check out my work please.</p>
           <div class="welcome__buttons">
             <button class="btn btn-black">Contact me</button>
             <button class="btn">Check my work</button>
@@ -92,11 +92,13 @@
       <section id="work">Work section</section>
       <section id="resume">Resume section</section>
       <section id="contact">Contact section</section>
+
+
+
       <footer>Made by Valdas Stonkus</footer>
   </div>
 
-  <!-- side navigation -->
-  <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+  <!-- side navigation https://www.w3schools.com/howto/howto_js_sidenav.asp -->
   <div id="sidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="bi-x-lg"></i></a>
     <a href="#welcome" onclick="closeNav()">Home</a>
@@ -104,6 +106,9 @@
     <a href="#resume" onclick="closeNav()">Resume</a>
     <a href="#contact" onclick="closeNav()">Contact</a>
   </div>
+
+
+
 
   </main>
   <script src="main.js"></script>
