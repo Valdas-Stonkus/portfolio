@@ -18,6 +18,13 @@ $media-mobile-sm: "only screen and (max-width : 480px)";
 //   background: red;
 // }
 
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
 
 body {
   background-color: $myColor3;
@@ -85,6 +92,8 @@ body {
 
   &__item a:hover {
     text-shadow: 2px 2px 6px $myColor3;
+    cursor: pointer;
+
   }
 
   &__side-menu {
@@ -122,6 +131,8 @@ body {
 
 .sidenav a:hover {
   color: $myColor3;
+  cursor: pointer;
+
 }
 
 .sidenav .closebtn {
@@ -132,29 +143,21 @@ body {
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-
-  .sidenav a {
-    font-size: 18px;
-  }
+main {
+  padding: 1em 7em 1em;
 }
 
 .welcome {
   display: flex;
   align-items: center;
-  padding: 1em 7em 1em;
   position: relative;
-
 
   &__pic-wrapper {
     display: flex;
     flex: 1;
     position: relative;
     padding: 0.5em;
-    animation: idejimas 1s;
+    animation: flow-left 1s;
   }
 
   &__image {
@@ -207,57 +210,7 @@ body {
     margin-right: auto;
   }
 
-  // media
-  @media #{$media-desktop} {
-    padding: 1em 2em 1em;
 
-    .btn {
-      padding: 10px 40px;
-    }
-  }
-
-  @media #{$media-tablet} {
-    padding: 0em 2em 0em;
-
-    .btn {
-      padding: 10px 30px;
-    }
-  }
-
-  @media #{$media-mobile-max} {
-    flex-direction: column;
-    padding: 1em 1em 0em;
-
-    &__top-holder {
-      left: 60px;
-    }
-
-    &__bottom-holder {
-      right: 60px;
-    }
-
-    .btn {
-      padding: 10px;
-    }
-
-    &__image {
-      padding: 0em 1em 0em;
-      max-width: 60%;
-      // text-align: center;
-    }
-  }
-
-  @media #{$media-mobile-sm} {
-    padding: 1em 0em 0em;
-
-    &__top-holder {
-      left: 20px;
-    }
-
-    &__bottom-holder {
-      right: 20px;
-    }
-  }
 }
 
 .work {
@@ -268,7 +221,49 @@ body {
   &__title {
     margin-bottom: 0;
   }
+
+  &__title-description {
+    text-align: center;
+  }
+
+  &__tags-filter ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__tags-filter label {
+    margin: 0 10px;
+    padding: 1px 15px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: $myColor5;
+    color: $myColor3;
+    user-select: none;
+
+  }
+
+  &__tags-filter label:hover {
+    text-shadow: 2px 2px 6px $myColor3;
+    cursor: pointer;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  input[type="radio"]:checked+label {
+    background: $myColor3;
+    color: white;
+  }
+
+
 }
+
+
+
+
 
 .highlight {
   color: $myColor5;
@@ -289,6 +284,8 @@ body {
 
 .btn:hover {
   text-shadow: 2px 2px 6px $myColor3;
+  cursor: pointer;
+
 }
 
 .btn-black {
@@ -298,14 +295,91 @@ body {
 
 .btn-black:hover {
   text-shadow: 2px 2px 6px $myColor5;
+  cursor: pointer;
+
 }
 
 footer {
   text-align: right;
 }
 
+// media
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media #{$media-desktop} {
+  main {
+    padding: 1em 2em 1em;
+  }
+
+  .btn {
+    padding: 10px 40px;
+  }
+}
+
+@media #{$media-tablet} {
+  main {
+    padding: 0em 2em 0em;
+  }
+
+  .btn {
+    padding: 10px 30px;
+  }
+}
+
+@media #{$media-mobile-max} {
+
+  main {
+    padding: 1em 1em 0em;
+  }
+
+  .welcome {
+    flex-direction: column;
+
+    &__top-holder {
+      left: 50px;
+    }
+
+    &__bottom-holder {
+      right: 50px;
+    }
+
+    &__image {
+      padding: 0em 1em 0em;
+      max-width: 60%;
+    }
+  }
+
+  .btn {
+    padding: 10px;
+  }
+}
+
+@media #{$media-mobile-sm} {
+  main {
+    padding: 1em 0em 0em;
+  }
+
+  .welcome {
+    &__top-holder {
+      left: 20px;
+    }
+
+    &__bottom-holder {
+      right: 20px;
+    }
+  }
+}
+
 // animations
-@keyframes idejimas {
+@keyframes flow-left {
   0% {
     left: -1000px;
   }
