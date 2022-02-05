@@ -1,22 +1,19 @@
 $myFont: 'Chakra Petch',
 sans-serif;
-$myColor1:#000000; //black
+$myColorBlack:#000000; //black
 $myColor2:#8083FF;
 $myColor3:#22212F; // text color
 $myColor4:#00E5B0;
 $myColor5:#FAF7FF;
+$myColorGrey: rgba(194, 194, 194, 0.363);
 $myFontSize: 18px;
 $bodyWidth: 1200px;
 
-// TODO remove comments
 $media-desktop: "only screen and (max-width : 1130px)";
 $media-tablet: "only screen and (max-width : 768px)";
 $media-mobile-max: "only screen and (max-width : 600px)";
 $media-mobile-min: "only screen and (min-width : 600px)";
 $media-mobile-sm: "only screen and (max-width : 480px)";
-// @media #{$media-desktop} {
-//   background: red;
-// }
 
 a,
 a:hover,
@@ -28,7 +25,6 @@ a:active {
 
 body {
   background-color: $myColor3;
-  // opacity: 0.3;
 }
 
 .container {
@@ -76,7 +72,6 @@ body {
     margin-bottom: 0;
     margin-left: 0;
     padding-left: 0;
-    // gap: 25%;
 
   }
 
@@ -213,8 +208,8 @@ main {
     margin-left: auto;
     margin-right: auto;
   }
-
-
+  
+  
 }
 
 .work {
@@ -222,22 +217,22 @@ main {
   flex-direction: column;
   align-items: center;
   margin: 2em 0em;
-
+  
   &__title {
     margin-bottom: 0;
   }
-
+  
   &__title-description {
     text-align: center;
   }
-
+  
   &__tags-filter ul {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
-
+  
   &__tags-filter label {
     margin: 0 10px;
     padding: 1px 15px;
@@ -246,23 +241,23 @@ main {
     background-color: $myColor5;
     color: $myColor3;
     user-select: none;
-
+    
   }
-
+  
   &__tags-filter label:hover {
     text-shadow: 2px 2px 6px $myColor3;
     cursor: pointer;
   }
-
+  
   input[type="radio"] {
     display: none;
   }
-
+  
   input[type="radio"]:checked+label {
     background: $myColor3;
     color: white;
   }
-
+  
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -270,38 +265,75 @@ main {
     margin: 1em 0em;
     justify-content: space-between;
   }
-
+  
   &__card-container {
     padding: 1em;
   }
-
+  
   &__card {
-    width: 200px;
-    min-height: 300px;
+    width: 300px;
+    min-height: 460px;
+    margin-bottom: 1em;
     border: 1px solid grey;
     border-radius: 10px;
-
+    
   }
-
+  // TODO end here need to correct images
   &__card-image {
     background-color: grey;
-    width: 160px;
+    width: 250px;
     height: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1em;
   }
-
-  &__card-btn-div {
+  
+  &__card-title {
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin: 0.6em 0;
+    
+  }
+  
+  &__tag-list {
     display: flex;
-
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  &__tag-list li {
+    margin: 0 2px;
+    padding: 2px 4px;
+    border-radius: 6px;
+    color: $myColorBlack;
+    background-color: $myColorGrey;
+    font-size: small;
+    font-weight: bold;
+    user-select: none;
+    
+  }
+  
+  &__card-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+  &__card-button {
+    padding: 15px 32px;
+    margin: 0px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: $myColor5;
   }
 }
 
 .highlight {
   color: $myColor5;
-  background-color: $myColor1;
+  background-color: $myColorBlack;
 }
 
 .btn {
@@ -319,7 +351,7 @@ main {
 }
 
 .btn-black {
-  background-color: $myColor1;
+  background-color: $myColorBlack;
   color: $myColor5;
 }
 

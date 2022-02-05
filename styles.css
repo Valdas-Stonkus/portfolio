@@ -220,22 +220,54 @@ main {
   padding: 1em;
 }
 .work__card {
-  width: 200px;
-  min-height: 300px;
+  width: 300px;
+  min-height: 460px;
+  margin-bottom: 1em;
   border: 1px solid grey;
   border-radius: 10px;
 }
 .work__card-image {
   background-color: grey;
-  width: 160px;
+  width: 250px;
   height: 200px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1em;
 }
-.work__card-btn-div {
+.work__card-title {
+  font-weight: bold;
+  margin-bottom: 1em;
+  margin: 0.6em 0;
+}
+.work__tag-list {
   display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.work__tag-list li {
+  margin: 0 2px;
+  padding: 2px 4px;
+  border-radius: 6px;
+  color: #000000;
+  background-color: rgba(194, 194, 194, 0.363);
+  font-size: small;
+  font-weight: bold;
+  user-select: none;
+}
+.work__card-buttons {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+.work__card-button {
+  padding: 15px 32px;
+  margin: 0px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #FAF7FF;
 }
 
 .highlight {
