@@ -9,7 +9,7 @@ $myFontSize: 18px;
 $bodyWidth: 1200px;
 
 // TODO remove comments
-$media-desktop: "only screen and (max-width : 1024px)";
+$media-desktop: "only screen and (max-width : 1130px)";
 $media-tablet: "only screen and (max-width : 768px)";
 $media-mobile-max: "only screen and (max-width : 600px)";
 $media-mobile-min: "only screen and (min-width : 600px)";
@@ -263,20 +263,38 @@ main {
     color: white;
   }
 
-  &__cards-container {
+  &__container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin: 1em 0em;
     justify-content: space-between;
+  }
 
+  &__card-container {
+    padding: 1em;
   }
 
   &__card {
     width: 200px;
-    height: 300px;
+    min-height: 300px;
     border: 1px solid grey;
     border-radius: 10px;
+
+  }
+
+  &__card-image {
+    background-color: grey;
+    width: 160px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+  }
+
+  &__card-btn-div {
+    display: flex;
 
   }
 }

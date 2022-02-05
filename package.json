@@ -6,7 +6,6 @@
   "description": "This is personal portfolio. Made from scratch without any library or framework. Just HTML CSS and vanilla Javascript.This is my personal portfolio. Made from scratch without any library or framework. Just HTML and CS",
   "version": "1.0.0",
   "main": "main.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MrStonkus/portfolio.git"
@@ -23,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/MrStonkus/portfolio/issues"
   },
-  "homepage": "https://github.com/MrStonkus/portfolio#readme"
+  "homepage": "https://github.com/MrStonkus/portfolio#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
 }
