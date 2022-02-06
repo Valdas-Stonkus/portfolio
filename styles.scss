@@ -1,18 +1,21 @@
 $myFont: 'Chakra Petch',
 sans-serif;
-$myColorBlack:#000000; //black
+$myColorBackground: rgb(25,31,41);
+$myColorText:rgb(151, 152, 153);
+$myColorBlack:rgb(21, 22, 24);
+
 $myColor2:#8083FF;
-$myColor3:#22212F; // text color
 $myColor4:#00E5B0;
-$myColor5:#FAF7FF;
-$myColorGrey: rgba(194, 194, 194, 0.363);
+$myColorWhite:#FFFFFF;
+$myColorGrey: rgb(245, 246, 247);
+$myColorFilterText: rgb(151, 152, 153);
 $myFontSize: 18px;
 $bodyWidth: 1200px;
 
-$media-desktop: "only screen and (max-width : 1130px)";
+$media-desktop: "only screen and (max-width : 1220px)";
 $media-tablet: "only screen and (max-width : 768px)";
-$media-mobile-max: "only screen and (max-width : 600px)";
-$media-mobile-min: "only screen and (min-width : 600px)";
+$media-mobile-max: "only screen and (max-width : 700px)";
+$media-mobile-min: "only screen and (min-width : 700px)";
 $media-mobile-sm: "only screen and (max-width : 480px)";
 
 a,
@@ -24,14 +27,14 @@ a:active {
 }
 
 body {
-  background-color: $myColor3;
+  background-color: $myColorBackground;
 }
 
 .container {
-  background-color: $myColor5;
+  background-color: $myColorWhite;
   font-family: $myFont;
   font-size: $myFontSize;
-  color: $myColor3;
+  color: $myColorText;
   max-width: $bodyWidth;
   margin-left: auto;
   margin-right: auto;
@@ -50,11 +53,12 @@ body {
     font-weight: bold;
     font-size: 2em;
     padding-left: 15px;
+    color: $myColorBlack;
 
   }
 
   &__social-icons ul li a {
-    color: $myColor3;
+    color: $myColorText;
 
   }
 
@@ -78,6 +82,7 @@ body {
   &__item {
     padding-left: 15px;
     padding-right: 15px;
+    font-size: x-large;
   }
 
   &__item a {
@@ -86,14 +91,14 @@ body {
   }
 
   &__item a:hover {
-    text-shadow: 2px 2px 6px $myColor3;
+    text-shadow: 2px 2px 6px $myColorText;
     cursor: pointer;
 
   }
 
   &__side-menu {
     font-size: 32px;
-    color: $myColor3;
+    color: $myColorText;
 
     @media #{$media-mobile-min} {
       display: none;
@@ -108,7 +113,7 @@ body {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: $myColor5;
+  background-color: $myColorWhite;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -125,7 +130,7 @@ body {
 }
 
 .sidenav a:hover {
-  color: $myColor3;
+  color: $myColorText;
   cursor: pointer;
 
 }
@@ -146,7 +151,7 @@ main {
   display: flex;
   align-items: center;
   position: relative;
-  margin: 2em 0em;
+  margin: 1em 0em;
 
 
   &__pic-wrapper {
@@ -198,8 +203,14 @@ main {
     padding: 0.5em;
   }
 
+  &__text-wrapper p{
+    font-weight: 600;
+  }
+
   &__title {
+    font-size: xxx-large;
     font-weight: 700;
+    color: $myColorBlack;
   }
 
   &__buttons {
@@ -207,6 +218,20 @@ main {
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  &__button{
+    font-size: larger;
+    border-color: $myColorFilterText;
+    color: $myColorFilterText;
+    border-width: 3px;
+    background-color: $myColorWhite;
+  }
+
+  &__button-dark {
+    color: $myColorWhite;
+    background-color: $myColorBlack;
+    font-size: larger;
   }
   
   
@@ -216,10 +241,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2em 0em;
+  margin: 1em 0em;
   
   &__title {
-    margin-bottom: 0;
+    margin: 0.5em;
+    color: $myColorBlack;
+    font-size: xxx-large;
   }
   
   &__title-description {
@@ -236,16 +263,16 @@ main {
   &__tags-filter label {
     margin: 0 10px;
     padding: 1px 15px;
-    border: 1px solid grey;
     border-radius: 20px;
-    background-color: $myColor5;
-    color: $myColor3;
+    background-color: $myColorGrey;
+    color: $myColorFilterText;
     user-select: none;
+    font-weight: 600;
     
   }
   
   &__tags-filter label:hover {
-    text-shadow: 2px 2px 6px $myColor3;
+    text-shadow: 2px 2px 6px $myColorText;
     cursor: pointer;
   }
   
@@ -254,7 +281,7 @@ main {
   }
   
   input[type="radio"]:checked+label {
-    background: $myColor3;
+    background: $myColorText;
     color: white;
   }
   
@@ -274,25 +301,31 @@ main {
     width: 300px;
     min-height: 460px;
     margin-bottom: 1em;
-    border: 1px solid grey;
-    border-radius: 10px;
     
   }
-  // TODO end here need to correct images
   &__card-image {
-    background-color: grey;
-    width: 250px;
-    height: 200px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: $myColorGrey;
+    border-radius: 20px;
+    padding: 5px;
+    height: 200px;
+    // object-fit: cover;
+    object-fit: contain;
   }
+  &__card-image img{
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    object-fit: contain;
+  }
+
   
   &__card-title {
     font-weight: bold;
     margin-bottom: 1em;
     margin: 0.6em 0;
-    
+    color: $myColorBlack;
+    font-size: 1em;
   }
   
   &__tag-list {
@@ -317,22 +350,29 @@ main {
   
   &__card-buttons {
     display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: space-between;
   }
   &__card-button {
-    padding: 15px 32px;
-    margin: 0px;
+    margin: 0px !important;
+    padding: 15px 15px !important;
     border: 1px solid grey;
     border-radius: 5px;
-    background-color: $myColor5;
+    background-color: $myColorWhite;
+    
+  }
+  
+  &__card-button-dark {
+    margin: 0px !important;
+    padding: 15px 15px !important;
+    color: $myColorWhite;
+    background-color: $myColorBlack;
+    font-size: larger;
+    
   }
 }
 
 .highlight {
-  color: $myColor5;
+  color: $myColorWhite;
   background-color: $myColorBlack;
 }
 
@@ -341,22 +381,23 @@ main {
   margin: 10px;
   border: 1px solid grey;
   border-radius: 5px;
-  background-color: $myColor5;
+  
+  
 }
 
 .btn:hover {
-  text-shadow: 2px 2px 6px $myColor3;
+  text-shadow: 2px 2px 6px $myColorText;
   cursor: pointer;
 
 }
 
 .btn-black {
   background-color: $myColorBlack;
-  color: $myColor5;
+  color: $myColorWhite;
 }
 
 .btn-black:hover {
-  text-shadow: 2px 2px 6px $myColor5;
+  text-shadow: 2px 2px 6px $myColorWhite;
   cursor: pointer;
 
 }
@@ -367,6 +408,10 @@ footer {
 
 // media
 @media screen and (max-height: 450px) {
+  main {
+    padding: 1em 2em 1em;
+  }
+
   .sidenav {
     padding-top: 15px;
   }
@@ -374,21 +419,39 @@ footer {
   .sidenav a {
     font-size: 18px;
   }
+
+  .btn {
+    padding: 10px 15px;
+  }
+
+  
+  
 }
 
 @media #{$media-desktop} {
   main {
     padding: 1em 2em 1em;
   }
+  
+  .welcome__title {
+    font-size: xx-large;
+  }
 
-  .btn {
-    padding: 10px 40px;
+  .work__container {
+    justify-content: space-evenly;
   }
 }
 
 @media #{$media-tablet} {
   main {
     padding: 0em 2em 0em;
+  }
+  .nav__item {
+    font-size: large;
+  }
+
+  .welcome__title {
+    font-size: x-large;
   }
 
   .btn {

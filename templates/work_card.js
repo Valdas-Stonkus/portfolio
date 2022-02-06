@@ -7,7 +7,9 @@ function cardHtml(work) {
   return `
   <div class="work__card">
     <div class="work__card-container">
-      <img class="work__card-image" src="${work.image.src}" alt="${work.image.alt}" />
+      <div class="work__card-image">
+        <img src="${work.image.src}" alt="${work.image.alt}" />
+      </div>
       <div class="work__card-title">${work.title}</div>
       <div>
         <ul class="work__tag-list">
@@ -16,8 +18,8 @@ function cardHtml(work) {
       </div>
       <p>${work.description}</p>
       <div class="work__card-buttons">
-        <button type="button" class="work__card-button">Preview</button>
-        <button type="button" class="work__card-button">Github repo</button>
+        <button type="button" class="btn work__card-button-dark">Preview</button>
+        <button type="button" class="btn work__card-button">Github repo</button>
       </div>
     </div>
   </div>
