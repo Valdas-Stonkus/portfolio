@@ -1,4 +1,2 @@
-/dev_src
-/node_modules/
-/.vscode
-
+dev_src
+node_modules

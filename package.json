@@ -1,32 +1,23 @@
 {
-  "scripts": {
-    "start": "live-server",
-    "dev": "concurrently \"sass --watch styles.scss styles.css\" \"live-server\""
-  },
   "name": "portfolio",
-  "description": "This is personal portfolio. Made from scratch without any library or framework. Just HTML CSS and vanilla Javascript.This is my personal portfolio. Made from scratch without any library or framework. Just HTML and CS",
   "version": "1.0.0",
-  "main": "main.js",
+  "description": "It will be new portfolio variant.",
+  "main": "index.js",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "scripts": {
+    "start": "live-server --open=./index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MrStonkus/portfolio.git"
   },
-  "keywords": [
-    "portfolio",
-    "MrStonkus",
-    "developer",
-    "web",
-    "developer"
-  ],
-  "author": "MrStonkus",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MrStonkus/portfolio/issues"
   },
-  "homepage": "https://github.com/MrStonkus/portfolio#readme",
-  "devDependencies": {
-    "concurrently": "^7.0.0",
-    "live-server": "^1.2.1",
-    "sass": "^1.49.7"
-  }
+  "homepage": "https://github.com/MrStonkus/portfolio#readme"
 }
