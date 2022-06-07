@@ -242,17 +242,19 @@ section {
 
 }
 
+.title-section {
+  margin: 0.5em;
+  color: $myColorBlack;
+  font-size: xxx-large;
+}
+
 .work {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1em 0em;
 
-  &__title {
-    margin: 0.5em;
-    color: $myColorBlack;
-    font-size: xxx-large;
-  }
+
 
   &__title-description {
     text-align: center;
@@ -366,7 +368,6 @@ section {
     border: 1px solid grey;
     border-radius: 5px;
     background-color: $myColorWhite;
-
   }
 
   &__card-button-dark {

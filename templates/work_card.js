@@ -19,7 +19,7 @@ function cardHtml(work) {
       <p>${work.description}</p>
       <div class="work__card-buttons">
         <button type="button" class="btn work__card-button-dark">Preview</button>
-        <button type="button" class="btn work__card-button">Github repo</button>
+        <button type="button" class="btn work__card-button">Github</button>
       </div>
     </div>
   </div>
