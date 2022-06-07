@@ -1,6 +1,6 @@
 $myFont: 'Chakra Petch',
 sans-serif;
-$myColorBackground: rgb(25,31,41);
+$myColorBackground: rgb(25, 31, 41);
 $myColorText:rgb(151, 152, 153);
 $myColorBlack:rgb(21, 22, 24);
 
@@ -147,6 +147,11 @@ main {
   padding: 1em 7em 1em;
 }
 
+section {
+  padding: 1em;
+
+}
+
 .welcome {
   display: flex;
   align-items: center;
@@ -203,7 +208,7 @@ main {
     padding: 0.5em;
   }
 
-  &__text-wrapper p{
+  &__text-wrapper p {
     font-weight: 600;
   }
 
@@ -220,7 +225,7 @@ main {
     margin-right: auto;
   }
 
-  &__button{
+  &__button {
     font-size: larger;
     border-color: $myColorFilterText;
     color: $myColorFilterText;
@@ -233,8 +238,8 @@ main {
     background-color: $myColorBlack;
     font-size: larger;
   }
-  
-  
+
+
 }
 
 .work {
@@ -242,24 +247,24 @@ main {
   flex-direction: column;
   align-items: center;
   margin: 1em 0em;
-  
+
   &__title {
     margin: 0.5em;
     color: $myColorBlack;
     font-size: xxx-large;
   }
-  
+
   &__title-description {
     text-align: center;
   }
-  
+
   &__tags-filter ul {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
-  
+
   &__tags-filter label {
     margin: 0 10px;
     padding: 1px 15px;
@@ -268,23 +273,23 @@ main {
     color: $myColorFilterText;
     user-select: none;
     font-weight: 600;
-    
+
   }
-  
+
   &__tags-filter label:hover {
     text-shadow: 2px 2px 6px $myColorText;
     cursor: pointer;
   }
-  
+
   input[type="radio"] {
     display: none;
   }
-  
+
   input[type="radio"]:checked+label {
     background: $myColorText;
     color: white;
   }
-  
+
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -292,17 +297,18 @@ main {
     margin: 1em 0em;
     justify-content: space-between;
   }
-  
+
   &__card-container {
     padding: 1em;
   }
-  
+
   &__card {
     width: 300px;
     min-height: 460px;
     margin-bottom: 1em;
-    
+
   }
+
   &__card-image {
     display: block;
     background-color: $myColorGrey;
@@ -312,14 +318,15 @@ main {
     // object-fit: cover;
     object-fit: contain;
   }
-  &__card-image img{
+
+  &__card-image img {
     width: 100%;
     height: 200px;
     border-radius: 4px;
     object-fit: contain;
   }
 
-  
+
   &__card-title {
     font-weight: bold;
     margin-bottom: 1em;
@@ -327,15 +334,15 @@ main {
     color: $myColorBlack;
     font-size: 1em;
   }
-  
+
   &__tag-list {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
+
   }
-  
+
   &__tag-list li {
     margin: 0 2px;
     padding: 2px 4px;
@@ -345,29 +352,30 @@ main {
     font-size: small;
     font-weight: bold;
     user-select: none;
-    
+
   }
-  
+
   &__card-buttons {
     display: flex;
     justify-content: space-between;
   }
+
   &__card-button {
     margin: 0px !important;
     padding: 15px 15px !important;
     border: 1px solid grey;
     border-radius: 5px;
     background-color: $myColorWhite;
-    
+
   }
-  
+
   &__card-button-dark {
     margin: 0px !important;
     padding: 15px 15px !important;
     color: $myColorWhite;
     background-color: $myColorBlack;
     font-size: larger;
-    
+
   }
 }
 
@@ -381,8 +389,8 @@ main {
   margin: 10px;
   border: 1px solid grey;
   border-radius: 5px;
-  
-  
+
+
 }
 
 .btn:hover {
@@ -424,15 +432,15 @@ footer {
     padding: 10px 15px;
   }
 
-  
-  
+
+
 }
 
 @media #{$media-desktop} {
   main {
     padding: 1em 2em 1em;
   }
-  
+
   .welcome__title {
     font-size: xx-large;
   }
@@ -446,6 +454,7 @@ footer {
   main {
     padding: 0em 2em 0em;
   }
+
   .nav__item {
     font-size: large;
   }
