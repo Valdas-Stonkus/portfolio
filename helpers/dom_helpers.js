@@ -1,13 +1,11 @@
-import getCardHtml from '../templates/work_card.js'
-
-// add work objects to work_container
-function addWorksToDOM(works) {
-  works.forEach((work) => {
-    const cardHtml = getCardHtml(work)
+// insert html before the first child of the given element
+function insertToDom(divClass, htmlTemplate, dataArr) {
+  dataArr.forEach((item) => {
+    const html = htmlTemplate(item)
 		document
-			.querySelector('div.work__container')
-			.insertAdjacentHTML('beforeend', cardHtml)
+			.querySelector(divClass)
+			.insertAdjacentHTML('beforeend', html)
 	})
 }
 
-export default addWorksToDOM;
+export default insertToDom;

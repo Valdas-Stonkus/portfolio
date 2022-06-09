@@ -1,6 +1,10 @@
 import worksData from './database/works_db.js'
-import Work from './classes/work.js'
-import addWorksToDom from './helpers/dom_helpers.js'
+import Work from './classes/Work.js'
+// import Tag from './classes/Tag.js'
+
+import getCardHtml from '../templates/work_card.js'
+import getTagHtml from '../templates/tag.js'
+import insertToDom from './helpers/dom_helpers.js'
 
 // NAVIGATION -------------------------------------------------------------------
 function openNav() {
@@ -20,11 +24,17 @@ function closeNav() {
 }
 
 // WORK --------------------------------------------------------------------------
-// create work objects
+// get works tags and add them to the DOM
+const tags = new Set()
+worksData.forEach(w => w.tags.forEach(t => tags.add(t)))
+console.log(tags)
+insertToDom('div.work__tags-filter', getTagHtml, tags)
+
+
+// create work objects add objects as cards to work container DOM
 let worksArr = []
 worksData.forEach((wData) => worksArr.push(new Work(wData)))
-// add all work objects as cards to work container DOM
-addWorksToDom(worksArr)
+insertToDom('div.work__container', getCardHtml, worksArr)
 
 
 	

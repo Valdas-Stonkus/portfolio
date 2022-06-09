@@ -260,6 +260,11 @@ section {
     text-align: center;
   }
 
+  &__tags-filter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   &__tags-filter ul {
     display: flex;
     list-style-type: none;
@@ -268,7 +273,7 @@ section {
   }
 
   &__tags-filter label {
-    margin: 0 10px;
+    margin: 5px 10px;
     padding: 1px 15px;
     border-radius: 20px;
     background-color: $myColorGrey;
