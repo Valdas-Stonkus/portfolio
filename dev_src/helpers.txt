@@ -1,0 +1,16 @@
+
+
+git checkout -b black-and-white   
+
+git add . && git commit -m "init" && git push
+
+sass --watch styles.scss styles.css
+
+https://dribbble.com/shots/15376990-Portfolio-page-for-Java-Developer/attachments/7139792?mode=media
+
+https://dribbble.com/shots/15376997-Portfolio-page-for-Java-Developer-Mobile
+
+https://www.tutorialrepublic.com/bootstrap-icons-classes.php
+
+
+

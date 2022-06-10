@@ -1,0 +1,63 @@
+<!-- -------------------------------------------- -->
+  <div id="project-section" class="container" style="padding-top: 60px;">
+    <h1 class="text-center mb-4">These are some of my projects</h1>  
+    <div class="card-columns">
+      
+      <div class="card">
+        <img class="card-img-top" src="./src/cash-register.png" alt="The JavaScript code of the Cash register function in black background">
+        <div class="card-body">
+          <h5 class="card-title">Cash register</h5>
+          <h6 class="card-subtitle mb-2 text-muted">function</h6>
+          <p class="card-text">Very interesting task. I made the cash register drawer function checkCashRegister() that accepts purchase price as the first argument, payment as the second argument, and cash-in-drawer as the third argument. The function should always return an object with a status key and a change key.</p>
+          <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/cash-register" class="card-link" target="_blank">Test page</a>
+          <a href="https://github.com/MrStonkus/freeCodeCamp/blob/main/JavaScript%20Algorithms%20and%20Data%20Structures/cashRegister.js" class="card-link" target="_blank">GitHub</a>
+          <p class="card-text"><small class="text-muted">JavaScript</small></p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img class="card-img-top" src="./src/doze-calculator.png" alt="The JavaScript code of the Cash register function in black background">
+        <div class="card-body">
+          <h5 class="card-title">Doze calculator</h5>
+          <h6 class="card-subtitle mb-2 text-muted">code</h6>
+          <p class="card-text">This calculator takes the medicines and calculate drugs dozes by weekly dose amount. Basically it help peoples who using INR (blood thickness) monitoring.</p>
+          <a href="https://github.com/MrStonkus/doze-calculator" class="card-link" target="_blank">GitHub</a>
+          <p class="card-text"><small class="text-muted">JavaScript</small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="./src/to-do.png" alt="The JavaScript code of the Cash register function in black background">
+        <div class="card-body">
+          <h5 class="card-title">Quasar To-Do</h5>
+          <h6 class="card-subtitle mb-2 text-muted">web application</h6>
+          <p class="card-text">Simple To-Do application. I made it because I would like to test the new framework "Quasar". And I loved it. With one code I could made WIN, Android and SPA aplications.</p>
+          <a href="https://stonkus.lt/projects/to-do/#/" class="card-link" target="_blank">Demo</a>
+          <a href="https://github.com/MrStonkus/quasar-todo" class="card-link" target="_blank">GitHub</a>
+          <p class="card-text"><small class="text-muted">JavaScript</small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="./src/inr-app.png" alt="The JavaScript code of the Cash register function in black background">
+        <div class="card-body">
+          <h5 class="card-title">INR app (in progress)</h5>
+          <h6 class="card-subtitle mb-2 text-muted">web and Android application</h6>
+          <p class="card-text">This app will help peoples to monitor they INR (blood thickness) and keep all activities and reminders in one place.</p>
+          <a href="https://stonkus.lt/projects/inr/#/" class="card-link" target="_blank">Demo</a>
+          <a href="https://github.com/MrStonkus/inr-app" class="card-link" target="_blank">GitHub</a>
+          <p class="card-text"><small class="text-muted">JavaScript</small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="./src/inr-app.png" alt="The JavaScript code of the Cash register function in black background">
+        <div class="card-body">
+          <h5 class="card-title">INR app (in progress)</h5>
+          <h6 class="card-subtitle mb-2 text-muted">web and Android application</h6>
+          <p class="card-text">This app will help peoples to monitor they INR (blood thickness) and keep all activities and reminders in one place.</p>
+          <a href="https://stonkus.lt/projects/inr/#/" class="card-link" target="_blank">Demo</a>
+          <a href="https://github.com/MrStonkus/inr-app" class="card-link" target="_blank">GitHub</a>
+          <p class="card-text"><small class="text-muted">JavaScript</small></p>
+        </div>
+      </div>
