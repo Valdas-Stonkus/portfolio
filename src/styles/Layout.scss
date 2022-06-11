@@ -1,9 +1,10 @@
-.layout{
+.layout {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    &__content{
+
+    &__content {
         padding: 50px;
     }
 }

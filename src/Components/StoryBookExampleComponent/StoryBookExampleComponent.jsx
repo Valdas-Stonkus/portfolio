@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../logo.svg'
+// import logo from '/images/logo.svg'
 import '../../App.scss'
 
 // cia priimam propsus i komponenta is stories
@@ -13,7 +13,7 @@ const StoryBookExampleComponent = ({
         >
             Sample component in community blog
         </h1>
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <button style={{ backgroundColor, color }}>
             {name}
             {' '}

@@ -11,8 +11,8 @@ const Home = () => (
                 <div className="nav__logo">VS</div>
                 <div className="nav__links">
                     <ul className="nav__list">
-                        <li className="nav__item"><a href="#work" onClick="closeNav()">Work</a></li>
-                        <li className="nav__item"><a href="#contact" onClick="closeNav()">Contact</a></li>
+                        {/* <li className="nav__item"><a href="#work" onClick="closeNav()">Work</a></li>
+                        <li className="nav__item"><a href="#contact" onClick="closeNav()">Contact</a></li> */}
                     </ul>
                 </div>
                 <div className="nav__social-icons">
@@ -100,7 +100,7 @@ const Home = () => (
                 </p>
                 {/* <!-- work tags --> */}
                 <div className="work__tags-filter">
-                    <input id="rad1" type="radio" name="rad" checked="checked" />
+                    {/* <input id="rad1" type="radio" name="rad" checked="checked" /> */}
                     {/* <label htmlFor="rad1">All</label> */}
                 </div>
                 {/* <!-- TODO: add tag buttons filter --> */}
