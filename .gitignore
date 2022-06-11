@@ -31,3 +31,4 @@ yarn-error.log*
 .firebase/
 
 /dev_src/
+.vscode/
