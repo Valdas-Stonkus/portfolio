@@ -1,15 +1,15 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-// import Header from '../Header'
-// import Footer from '../Footer'
-import '../../styles/Layout.scss'
+import Header from './Header/Header'
+import Footer from './Footer/Footer'
+import './layout.scss'
 
 const Layout = () => (
     <div className="layout">
-        {/* <Header /> */}
         <div className="layout__content">
+            <Header />
             <Outlet />
-            {/* <Footer /> */}
+            <Footer />
         </div>
     </div>
 )

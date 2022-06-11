@@ -4,7 +4,7 @@ import About from './Pages/About'
 import Home from './Pages/Home'
 import Post from './Pages/Post'
 import Layout from './Components/Layout'
-import './styles/App.scss'
+import './styles/globals.scss'
 
 const App = () => (
     <Routes>
