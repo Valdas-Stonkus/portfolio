@@ -1,0 +1,530 @@
+$myFont: 'Chakra Petch',
+sans-serif;
+$myColorBackground: rgb(25, 31, 41);
+$myColorText:rgb(151, 152, 153);
+$myColorBlack:rgb(21, 22, 24);
+
+$myColor2:#8083FF;
+$myColor4:#00E5B0;
+$myColorWhite:#FFFFFF;
+$myColorGrey: rgb(245, 246, 247);
+$myColorFilterText: rgb(151, 152, 153);
+$myFontSize: 18px;
+$bodyWidth: 1200px;
+
+$media-desktop: "only screen and (max-width : 1220px)";
+$media-tablet: "only screen and (max-width : 768px)";
+$media-mobile-max: "only screen and (max-width : 700px)";
+$media-mobile-min: "only screen and (min-width : 700px)";
+$media-mobile-sm: "only screen and (max-width : 480px)";
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: $myColorBackground;
+}
+
+.container {
+  background-color: $myColorWhite;
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColorText;
+  max-width: $bodyWidth;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+
+  &__logo {
+    font-weight: bold;
+    font-size: 2em;
+    padding-left: 15px;
+    color: $myColorBlack;
+
+  }
+
+  &__social-icons ul li a {
+    color: $myColorText;
+
+  }
+
+  &__links {
+    @media #{$media-mobile-max} {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none outside none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+
+  }
+
+  &__item {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: x-large;
+  }
+
+  &__item a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__item a:hover {
+    text-shadow: 2px 2px 6px $myColorText;
+    cursor: pointer;
+
+  }
+
+  &__side-menu {
+    font-size: 32px;
+    color: $myColorText;
+
+    @media #{$media-mobile-min} {
+      display: none;
+    }
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: $myColorWhite;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-left: 1px solid;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: $myColorText;
+  cursor: pointer;
+
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 24px;
+  margin-left: 50px;
+}
+
+main {
+  padding: 1em 7em 1em;
+}
+
+section {
+  padding: 1em;
+
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 1em 0em;
+
+
+  &__pic-wrapper {
+    display: flex;
+    flex: 1;
+    position: relative;
+    padding: 0.5em;
+    animation: flow-left 1s;
+  }
+
+  &__image {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+  }
+
+  &__img-holder {
+    position: absolute;
+    background: whitesmoke;
+    width: 80px;
+    height: 40px;
+    transform: skewX(-25deg);
+    border-radius: 15%;
+    opacity: 0.7;
+    color: grey;
+    font-size: 14px
+  }
+
+  &__holder-dot {
+    font-weight: 700;
+    line-height: 6px;
+  }
+
+  &__top-holder {
+    left: 0px;
+    top: 0px;
+  }
+
+  &__bottom-holder {
+    bottom: 0px;
+    right: 0px;
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    padding: 0.5em;
+  }
+
+  &__text-wrapper p {
+    font-weight: 600;
+  }
+
+  &__title {
+    font-size: xxx-large;
+    font-weight: 700;
+    color: $myColorBlack;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__button {
+    font-size: larger;
+    border-color: $myColorFilterText;
+    color: $myColorFilterText;
+    border-width: 3px;
+    background-color: $myColorWhite;
+  }
+
+  &__button-dark {
+    color: $myColorWhite;
+    background-color: $myColorBlack;
+    font-size: larger;
+  }
+
+
+}
+
+.title-section {
+  margin: 0.5em;
+  color: $myColorBlack;
+  font-size: xxx-large;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 0em;
+
+
+
+  &__title-description {
+    text-align: center;
+  }
+
+  &__tags-filter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__tags-filter ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__tags-filter label {
+    margin: 5px 10px;
+    padding: 1px 15px;
+    border-radius: 20px;
+    background-color: $myColorGrey;
+    color: $myColorFilterText;
+    user-select: none;
+    font-weight: 600;
+
+  }
+
+  &__tags-filter label:hover {
+    text-shadow: 2px 2px 6px $myColorText;
+    cursor: pointer;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  input[type="radio"]:checked+label {
+    background: $myColorText;
+    color: white;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1em 0em;
+    justify-content: space-between;
+  }
+
+  &__card-container {
+    padding: 1em;
+  }
+
+  &__card {
+    width: 300px;
+    min-height: 460px;
+    margin-bottom: 1em;
+
+  }
+
+  &__card-image {
+    display: block;
+    background-color: $myColorGrey;
+    border-radius: 20px;
+    padding: 5px;
+    height: 200px;
+    // object-fit: cover;
+    object-fit: contain;
+  }
+
+  &__card-image img {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    object-fit: contain;
+  }
+
+
+  &__card-title {
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin: 0.6em 0;
+    color: $myColorBlack;
+    font-size: 1em;
+  }
+
+  &__tag-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  &__tag-list li {
+    margin: 0 2px;
+    padding: 2px 4px;
+    border-radius: 6px;
+    color: $myColorBlack;
+    background-color: $myColorGrey;
+    font-size: small;
+    font-weight: bold;
+    user-select: none;
+
+  }
+
+  &__card-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card-button {
+    margin: 0px !important;
+    padding: 15px 15px !important;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: $myColorWhite;
+  }
+
+  &__card-button-dark {
+    margin: 0px !important;
+    padding: 15px 15px !important;
+    color: $myColorWhite;
+    background-color: $myColorBlack;
+    font-size: larger;
+
+  }
+}
+
+.highlight {
+  color: $myColorWhite;
+  background-color: $myColorBlack;
+}
+
+.btn {
+  padding: 10px 50px;
+  margin: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+
+
+}
+
+.btn:hover {
+  text-shadow: 2px 2px 6px $myColorText;
+  cursor: pointer;
+
+}
+
+.btn-black {
+  background-color: $myColorBlack;
+  color: $myColorWhite;
+}
+
+.btn-black:hover {
+  text-shadow: 2px 2px 6px $myColorWhite;
+  cursor: pointer;
+
+}
+
+footer {
+  text-align: right;
+}
+
+// media
+@media screen and (max-height: 450px) {
+  main {
+    padding: 1em 2em 1em;
+  }
+
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 10px 15px;
+  }
+
+
+
+}
+
+@media #{$media-desktop} {
+  main {
+    padding: 1em 2em 1em;
+  }
+
+  .welcome__title {
+    font-size: xx-large;
+  }
+
+  .work__container {
+    justify-content: space-evenly;
+  }
+}
+
+@media #{$media-tablet} {
+  main {
+    padding: 0em 2em 0em;
+  }
+
+  .nav__item {
+    font-size: large;
+  }
+
+  .welcome__title {
+    font-size: x-large;
+  }
+
+  .btn {
+    padding: 10px 30px;
+  }
+}
+
+@media #{$media-mobile-max} {
+
+  main {
+    padding: 1em 1em 0em;
+  }
+
+  .welcome {
+    flex-direction: column;
+
+    &__top-holder {
+      left: 50px;
+    }
+
+    &__bottom-holder {
+      right: 50px;
+    }
+
+    &__image {
+      padding: 0em 1em 0em;
+      max-width: 60%;
+    }
+  }
+
+  .btn {
+    padding: 10px;
+  }
+}
+
+@media #{$media-mobile-sm} {
+  main {
+    padding: 1em 0em 0em;
+  }
+
+  .welcome {
+    &__top-holder {
+      left: 20px;
+    }
+
+    &__bottom-holder {
+      right: 20px;
+    }
+  }
+}
+
+// animations
+@keyframes flow-left {
+  0% {
+    left: -1000px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
