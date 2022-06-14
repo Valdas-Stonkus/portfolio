@@ -1,8 +1,8 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import About from './pages/About'
-import Home from './pages/Home'
-import Post from './pages/Post'
+import About from './Pages/About'
+import Home from './Pages/Home'
+import Post from './Pages/Post'
 import Layout from './components/Layout/Layout'
 import './styles/globals.scss'
 

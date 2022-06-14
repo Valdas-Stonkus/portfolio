@@ -2,10 +2,12 @@
 
 body {
     margin: 0;
-    font-family: $fontFamily;
+    font-family: 'roboto', 'sans-serif';
+    // font-family: 'Chakra Petch';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: $darkBackground;
+    background-image: linear-gradient(to right, $colorDark, black);
+    color: $textColor;
 }
 
 
@@ -13,7 +15,7 @@ body {
 
 // .container1 {
 //     background-color: $lightBackground;
-//     font-size: $fontSize;
+//     font-size: 18px;
 //     color: $textColorDark;
 // max-width: $bodyWidth;
 // margin-left: auto;

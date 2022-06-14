@@ -6,9 +6,9 @@
     margin-left: auto;
 
     &__content {
-        background-color: $lightBackground;
-        border-radius: $borderRadius;
-        margin: $marginYX;
+        background-color: $colorWhite;
+        border-radius: 5px;
+        margin: 50px 0;
         padding: 0 $size-1;
     }
 }
