@@ -7,7 +7,7 @@ const Home = () => (
         <div className="container1">
             Home page here
         </div>
-        <Button variant="outlined">Hello World</Button>
+        <Button variant="outlined" color="primary">Hello World</Button>
     </>
 )
 export default Home
