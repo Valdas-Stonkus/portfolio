@@ -1,0 +1,12 @@
+{
+    "folders": [{
+            "path": "."
+        },
+        {
+            "path": "..\\pimpackiukai_II"
+        }
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "portfolio"
+    }
+}
