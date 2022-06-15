@@ -4,7 +4,7 @@ import './styles/globals.scss'
 import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import PostsApi from './adapters/contentful/contentful.api'
+import PostsApi from './api/contentful/contentful.api'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
